@@ -24,6 +24,11 @@
                 transition: all 300ms linear;
                 transition-delay: 0s;
                 width: 70px;
+                -moz-user-select: none; 
+                -webkit-user-select: none; 
+                -ms-user-select:none; 
+                user-select:none;
+                -o-user-select:none;
             }
 
 
@@ -41,7 +46,7 @@
                 color: red;
                 width: 100px;
             }
-            
+
             .btn-reset:hover,
             .btn-reset:focus {
                 border: 1px solid red;
@@ -49,21 +54,31 @@
                 color: #FFF;
                 background-color: red;
             }
+
+            .btn-disable, .btn-disable:hover,
+            .btn-disable:focus {
+                border-color: grey;
+                background-color: grey;
+                color: white; 
+                pointer-events: none;
+                cursor: default;
+            }
         </style>
     </head>
 
     <body>
     <center>
-        <span><a class="btn">10%</a></span>
-        <span><a class="btn">25%</a></span>
-        <span><a class="btn">40%</a></span>
-        <span><a class="btn">60%</a></span>
-        <span><a class="btn">70%</a></span>
-        <span><a class="btn">75%</a></span>
-        <span><a class="btn">90%</a></span>
-        <span><a class="btn">100%</a></span>
+        <span><a id="10" class="btn">10%</a></span>
+        <span><a id="25" class="btn">25%</a></span>
+        <span><a id="40" class="btn">40%</a></span>
+        <span><a id="60" class="btn">60%</a></span>
+        <span><a id="70" class="btn">70%</a></span>
+        <span><a id="75" class="btn">75%</a></span>
+        <span><a id="90" class="btn">90%</a></span>
+        <span><a id="100" class="btn">100%</a></span>
+        
         <br/><br/><br/><br/>
-        <span><a class="btn btn-reset">Reset</a></span>
+        <span><a id="reset" class="btn btn-reset">Reset</a></span>
         <br/><br/><br/><br/><br/>
         <canvas class="loader"></canvas>
     </center>
@@ -74,24 +89,7 @@
 <script src="js/jquery.classyloader.js"></script>
 <script>
     $(document).ready(function () {
-        loaderObj = $('.loader').ClassyLoader({
-            width: 200, // width of the loader in pixels
-            height: 200, // height of the loader in pixels
-            displayOnLoad: true,
-            percentage: 50, // percent of the value, between 0 and 100
-            speed: 100, // miliseconds between animation cycles, lower value is faster
-            roundedLine: true, // whether the line is rounded, in pixels
-            showRemaining: true, // how the remaining percentage (100% - percentage)
-            fontFamily: 'Helvetica', // name of the font for the percentage
-            fontSize: '50px', // size of the percentage font, in pixels
-            showText: true, // whether to display the percentage text
-            diameter: 90, // diameter of the circle, in pixels
-            fontColor: 'rgba(33, 154, 179, 1)', // color of the font in the center of the loader, any CSS color would work, hex, rgb, rgba, hsl, hsla
-            lineColor: 'rgba(33, 154, 179,1)', // line color of the main circle
-            remainingLineColor: 'rgba(55, 55, 55, 0.2)', // line color of the remaining percentage (if showRemaining is true)
-            lineWidth: 2, // the width of the circle line in pixels
-            startFrom: 0
-        });
+        intializeLoader();
     });
 </script>
 <script type="text/javascript" src="js/controls.js"></script>

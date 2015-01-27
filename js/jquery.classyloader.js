@@ -54,7 +54,7 @@ function incrProgress(a) {
             var hw = r.width() / 2;
             var hh = r.height() / 2;
             var u = 100;
-            var a = startFrom;
+            var a = startFrom-1;
             var startPos = 50;
             var f = function (e) {
                 var t = radius(360) / u;
