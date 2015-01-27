@@ -12,3 +12,5 @@ Please take note of the following:
   * Rollback is not allowed.
   * jquery 1.11 is required.
 
+# Screenshot
+![alt tag](https://cloud.githubusercontent.com/assets/7301265/5916065/d6633b4e-a632-11e4-934d-58ed263d2839.PNG)
