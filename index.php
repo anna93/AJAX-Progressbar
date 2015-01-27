@@ -10,12 +10,12 @@
                 -webkit-border-radius: 3;
                 -moz-border-radius: 3;
                 border-radius: 3px;
-                border-color: #219ab3;;
+                border-color: #219ab3;
                 border-style: solid;
                 border-width: 1px;
                 cursor: pointer;
                 font-family: Courier New;
-                color: #219ab3;;
+                color: #219ab3;
                 font-size: 30px;
                 padding: 5px 10px 5px 10px;
                 text-decoration: none;
@@ -35,6 +35,20 @@
                 color: #FFF;
                 background-color: #219ab3;
             }
+
+            .btn-reset {
+                border-color: red;
+                color: red;
+                width: 100px;
+            }
+            
+            .btn-reset:hover,
+            .btn-reset:focus {
+                border: 1px solid red;
+                outline: 0;
+                color: #FFF;
+                background-color: red;
+            }
         </style>
     </head>
 
@@ -48,7 +62,9 @@
         <span><a class="btn">75%</a></span>
         <span><a class="btn">90%</a></span>
         <span><a class="btn">100%</a></span>
-        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/>
+        <span><a class="btn btn-reset">Reset</a></span>
+        <br/><br/><br/><br/><br/>
         <canvas class="loader"></canvas>
     </center>
 </body>
@@ -78,6 +94,6 @@
         });
     });
 </script>
-
+<script type="text/javascript" src="js/controls.js"></script>
 
 </html>
