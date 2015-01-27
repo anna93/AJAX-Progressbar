@@ -1,73 +1,100 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-    <title>Ajax-progressbar by shekharanna1993</title>
-  </head>
+        <title>Ajax-progressbar by shekharanna1993</title>
+    </head>
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Ajax-progressbar</h1>
-        <h2>AJAX Enabled Circular Progress bar.</h2>
-        <a href="https://github.com/shekharanna1993/AJAX-Progressbar" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+    <body>
+        <header>
+            <div class="inner">
+                <h1>Ajax-progressbar</h1>
+                <h2>AJAX Enabled Circular Progress bar.</h2>
+                <a href="https://github.com/shekharanna1993/AJAX-Progressbar" class="button"><small>View project on</small> GitHub</a>
+            </div>
+        </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
-<a id="ajax-progressbar" class="anchor" href="#ajax-progressbar" aria-hidden="true"><span class="octicon octicon-link"></span></a>AJAX-Progressbar</h1>
+        <div id="content-wrapper">
+            <div class="inner clearfix">
+                <section id="main-content">
+                    <h1>
+                        <a id="ajax-progressbar" class="anchor" href="#ajax-progressbar" aria-hidden="true"><span class="octicon octicon-link"></span></a>AJAX-Progressbar</h1>
 
-<p>AJAX Enabled Circular Progress bar.</p>
+                    <p>AJAX Enabled Circular Progress bar.</p>
 
-<p>The original version of this Progress bar can be found at:
-<a href="http://www.jqueryscript.net/loading/Circular-Percentage-Loader-Plugin-with-jQuery-Canvas-ClassyLoader.html">http://www.jqueryscript.net/loading/Circular-Percentage-Loader-Plugin-with-jQuery-Canvas-ClassyLoader.html</a></p>
+                    <p>The original version of this Progress bar can be found at:
+                        <a href="http://www.jqueryscript.net/loading/Circular-Percentage-Loader-Plugin-with-jQuery-Canvas-ClassyLoader.html">http://www.jqueryscript.net/loading/Circular-Percentage-Loader-Plugin-with-jQuery-Canvas-ClassyLoader.html</a></p>
 
-<p>Please take note of the following:</p>
+                    <p>Please take note of the following:</p>
 
-<ul>
-<li>Allows you to continue the progress of the bar.</li>
-<li>Call incrProgress(a) function to smoothly increment the progress status, which was missing in the original project.</li>
-<li>Rollback is not allowed.</li>
-<li>jquery 1.11 is required.</li>
-</ul>
+                    <ul>
+                        <li>Allows you to continue the progress of the bar.</li>
+                        <li>Call incrProgress(a) function to smoothly increment the progress status, which was missing in the original project.</li>
+                        <li>Rollback is not allowed.</li>
+                        <li>jquery 1.11 is required.</li>
+                    </ul>
 
-<h1>
-<a id="screenshot" class="anchor" href="#screenshot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Screenshot</h1>
+                    <h1>
+                        <a id="screenshot" class="anchor" href="#screenshot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h1>
+                    <div>
+                        <center>
+                            <span><a id="10" class="btn">10%</a></span>
+                            <span><a id="25" class="btn">25%</a></span>
+                            <span><a id="40" class="btn">40%</a></span>
+                            <span><a id="60" class="btn">60%</a></span>
+                            <span><a id="75" class="btn">75%</a></span>
+                            <span><a id="90" class="btn">90%</a></span>
+                            <span><a id="100" class="btn">100%</a></span>
 
-<p><img src="https://cloud.githubusercontent.com/assets/7301265/5916065/d6633b4e-a632-11e4-934d-58ed263d2839.PNG" alt="alt tag"></p>
-        </section>
+                            <br/><br/><br/><br/>
+                            <span><a id="reset" class="btn btn-reset">Reset</a></span>
+                            <br/><br/><br/><br/><br/>
+                            <canvas class="loader"></canvas>
+                        </center>
+                    </div>
 
-        <aside id="sidebar">
-          <a href="https://github.com/shekharanna1993/AJAX-Progressbar/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/shekharanna1993/AJAX-Progressbar/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+                </section>
 
-          <p class="repo-owner"><a href="https://github.com/shekharanna1993/AJAX-Progressbar"></a> is maintained by <a href="https://github.com/shekharanna1993">shekharanna1993</a>.</p>
+                <aside id="sidebar">
+                    <a href="https://github.com/shekharanna1993/AJAX-Progressbar/zipball/master" class="button">
+                        <small>Download</small>
+                        .zip file
+                    </a>
+                    <a href="https://github.com/shekharanna1993/AJAX-Progressbar/tarball/master" class="button">
+                        <small>Download</small>
+                        .tar.gz file
+                    </a>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
+                    <p class="repo-owner"><a href="https://github.com/shekharanna1993/AJAX-Progressbar"></a> is maintained by <a href="https://github.com/shekharanna1993">shekharanna1993</a>.</p>
+                    <center>
+                        <a href="http://in.linkedin.com/pub/shekhar-joshi/50/527/846" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Shekhar Joshi's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;View Shekhar Joshi's profile</span></a>
+                    </center><br/>
+                    <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+                </aside>
+            </div>
+        </div>
 
-  
-  </body>
+    </body>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="javascripts//jquery.classyloader.js"></script>
+    <script>
+        $(document).ready(function () {
+            intializeLoader();
+        });
+    </script>
+    <script type="text/javascript" src="javascripts/controls.js"></script>
+
 </html>
