@@ -15,7 +15,7 @@ Please take note of the following:
 
 ## How to use:
 It is a two stage process, 
-first calculate the percentage of the process completed(that can be done by initiating an AJAX method whicj continuously listens to the server).
+first calculate the percentage of the process completed(that can be done by initiating an AJAX method which continuously listens to the server or even a setinterval will do!).
 
 Second, pass the calculated percentage to incrProgress(a) function. Rollback is not possible.
 
