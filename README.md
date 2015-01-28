@@ -12,7 +12,13 @@ Please take note of the following:
   * Call incrProgress(a) function to smoothly increment the progress status, which was missing in the original project.
   * Rollback is not allowed.
   * jquery 1.11 is required.
- 
+
+## How to use:
+It is a two stage process, 
+first calculate the percentage of the process completed(that can be done by initiating an AJAX method whicj continuously listens to the server).
+
+Second, pass the calculated percentage to incrProgress(a) function. Rollback is not possible.
+
 ## Demo
 [Demo: click here](http://shekharanna1993.github.io/AJAX-Progressbar/)
 
