@@ -20,7 +20,7 @@ first calculate the percentage of the process completed(that can be done by init
 Second, pass the calculated percentage to incrProgress(a) function. Rollback is not possible.
 
 ## Demo
-[Demo: click here](http://shekharanna1993.github.io/AJAX-Progressbar/)
+[Demo: click here](http://anna93.github.io/AJAX-Progressbar/)
 
 ## Screenshot
 ![alt tag](https://cloud.githubusercontent.com/assets/7301265/5916065/d6633b4e-a632-11e4-934d-58ed263d2839.PNG)
